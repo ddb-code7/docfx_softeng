@@ -1,63 +1,59 @@
 # Self evaluation sheet
 
-|                          |      |
-| ------------------------ | ---- |
-| Name:                    |      |
-| Neptun:                  |      |
-| Claimed points in total: |      |
+|                          |                         |
+| ------------------------ | ----------------------- |
+| Name:                    |  Dairbek Dauletkozha    |
+| Neptun:                  |        CH3PNO           |
+| Claimed points in total: |          28             |
 
 ## Short description of the project
 
-> Answer in a few lines only.
+> The project is an E-Commerce Inventory and Order Management System built with Windows Forms and Entity Framework Core. It serves as an administrative dashboard allowing operators to manage product catalogs, map records to specific categories, dynamically filter active data, and securely process updates or item deletions with safety prompts.
 
 ## Database details
 
-> [!TIP]
->
-> From this point please remove the irrelevant lines from the document, and adjust the multipliers of the relevant features. At the end please sum up all the points and indicate them in the table above. Please add a screenshot or a one-liner text to show where we can find the feature you claim points for in the app. You can download this page in a .md format from GitHub just by clicking the "Edit This Page" button on the bottom of this page.
-
-> If you do not use your own database design please indicate the origin of the database here.
-
-- `6x1p` One point per table used in the app. 
-- `1x1p` Mermaid `erDiagram` of the DB. 
+- `6x1p` One point per table used in the app. (3 points)
+- (Products, Categories, Orders)
+- `1x1p` Mermaid `erDiagram` of the DB. (1 point)
+- Rendered directly below using Mermaid markdown syntax.
 
 #### User Interface
 
-- `1x1p` The application only exits after a confirmation dialog.
-- `3x1p` Layout where buttons load `UserControls` into a `Panel`, fully filling it. Each button earns points if it loads a functioning `UserControl`. Each `UserControl` yields `1p`. 
-- `3x1p` Multi-window application with at least two pop-up windows. Each Form must be its own class and have functionality. Windows can open via buttons or menu. Each popup Form worths `1p`. 
-- `1x1p` Proper use of **anchors**  and `Dock` throughout the application, ensuring UI resizes properly.
+- `1x1p` The application only exits after a confirmation dialog. (1 point)
+- `3x1p` Layout where buttons load `UserControls` into a `Panel`, fully filling it. Each button earns points if it loads a functioning `UserControl`. Each `UserControl` yields `1p`. (3 points)
+- `3x1p` Multi-window application with at least two pop-up windows. Each Form must be its own class and have functionality. Windows can open via buttons or menu. Each popup Form worths `1p`. (3 points)
+- `1x1p` Proper use of **anchors**  and `Dock` throughout the application, ensuring UI resizes properly.(1 point)
 
 #### Displaying Table Data in a `DataGridView`, `ListBox` or `ComboBox`
 
 You can create two of these Forms or UserControls for two tables. Points are can be collected for both as below. Points listed below refer to only one from or UserControl. Points are additive. 
 
-- `1x1p` Data is displayed in a `DataGridView` , `ListBox` or `ComboBox`.
-- `1x1p` Data can be filtered via any method (e.g., using a `TextBox`).
-- `1x1p` Foreign key shown via `DataGridViewComboBoxColumn` in case if a `DataGridView`.
+- `1x1p` Data is displayed in a `DataGridView` , `ListBox` or `ComboBox`. (1 point)
+- `1x1p` Data can be filtered via any method (e.g., using a `TextBox`). (1 point)
+- `1x1p` Foreign key shown via `DataGridViewComboBoxColumn` in case if a `DataGridView`. (1 point)
 - `1x2p` Data source is a custom class.
 
 #### Data Binding via `BindingSource`
 
 In addition to displaying table data in a `DataGridView`,`ListBox` or `ComboBox` (collection-based controls)
 
-- `1x2p` Working `BindingSource`.
-- `4x1p` Other bound controls, e.g. `TextBox`, `DateTimePicker`, foreign key `ComboBox` are used.
+- `1x2p` Working `BindingSource`. (2 points)
+- `4x1p` Other bound controls, e.g. `TextBox`, `DateTimePicker`, foreign key `ComboBox` are used. (2 points)
 
 #### Adding New Records Via a popup Form
 
 You can create two of these Forms or UserControls for two tables. Points are can be collected for both as below. Points listed below refer to one from or UserControl. Points are additive. 
 
-- `1x2p` Input validation (e.g., `String.IsNullOrEmpty()`).
-- `3x1p` `Regex`-based validation.
-- `1x2p` Working _OK_ and _Cancel_ buttons.
-- `1x1p` Form includes a dropdown or list for foreign key selection.
-- `2x1p` Input errors are shown via `ErrorProvider`
-- `1x1p` _OK_ button disabled on invalid input:  _OK_ button is disabled if errors exist.
+- `1x2p` Input validation (e.g., `String.IsNullOrEmpty()`). (2 points)
+- `3x1p` `Regex`-based validation. (1 point)
+- `1x2p` Working _OK_ and _Cancel_ buttons. (2 points)
+- `1x1p` Form includes a dropdown or list for foreign key selection. (1 point)
+- `2x1p` Input errors are shown via `ErrorProvider` (1 point)
+- `1x1p` _OK_ button disabled on invalid input:  _OK_ button is disabled if errors exist. (1 point)
 
 #### Adding a record into a detail table in a master-detail relationship
 
-`2x3p` for inserting a record into a detail table in a master-detail relationship
+`2x3p` for inserting a record into a detail table in a master-detail relationship 
 
 Let's take a two tables as an example: `ProductCategory` and `Product`. Product categories are displayed in a ListBox. The user can enter properties of a new product is TextBox-es. Clicking the "Add" button the new product is added to the selected category. 
 
@@ -69,12 +65,12 @@ Let's take a library database as an example with three tables: `Member`, `Book` 
 
 #### Deleting Records
 
-- `2x1p` Successful deletion of a selected record.
-- `2x1p` Deletion with confirmation. Eg. `MessageBox.Show("","",MessageBoxButtons.YesNo)`
+- `2x1p` Successful deletion of a selected record. (1 points)
+- `2x1p` Deletion with confirmation. Eg. `MessageBox.Show("","",MessageBoxButtons.YesNo)` 
 
 #### CSV File handling
 
-- `1x2p` Read data from a CSV file that can be opened using an OpenFileFialog. 
+- `1x2p` Read data from a CSV file that can be opened using an OpenFileFialog.
 
 - `1x2p` Save data to CSV file that can be picked using a SaveFileFialog. 
 
